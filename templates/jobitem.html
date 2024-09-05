@@ -1,0 +1,9 @@
+<div style="border-bottom:1px solid;padding-bottom:5px">
+  <div ><h4 style="margin-bottom:2px">Title:{{job.title}}</h4></div>
+  <div ><i style="margin-left:0;color:rgb(120,120,120)">Location:{{job.location}}</i></div>
+    {% if 'salary' in job %}
+  <div><i style="margin-left:0;color:rgb(120,120,120)">Salary:{{job.salary}}</i></div>
+    {% endif %}
+  
+</div>
+<button style="float:right;margin-top:-30px">Apply</button>
