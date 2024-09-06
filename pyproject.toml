@@ -8,6 +8,8 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.8"
 flask = "3.0.3"
+sqlalchemy = "2.0.34"
+psycopg2-binary = "2.9.9"
 
 
 [build-system]

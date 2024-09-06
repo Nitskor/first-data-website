@@ -1,4 +1,6 @@
 from flask import Flask, render_template
+from sqlalchemy import text
+from database import load_jobs
 app = Flask(__name__)
 
 JOBS = [{'id':1,
@@ -18,9 +20,15 @@ JOBS = [{'id':1,
              'location':'North Pole',
              'salary':'Rs 75,00,000'}]
 
+
+
+    
+
+    
 @app.route('/')
 def hello_world():
-    return render_template('home.html',jobs = JOBS)
+    jobs = load_jobs()
+    return render_template('home.html',jobs = jobs)
 
 if __name__ == "__main__":
   app.run(host='0.0.0.0',debug=True)
