@@ -2,7 +2,7 @@ from flask import jsonify
 import sqlalchemy
 from sqlalchemy import create_engine,text
 import os
-import json
+import psycopg2
 
 
 db_URL = os.environ['DB_CONNECTION_STR']
