@@ -1,0 +1,18 @@
+<h4>Application Form</h4>
+<form action="/jobs/{{job[0].id}}/apply" method="post">
+  <div style="margin-bottom:5px"><label>Full Name</label><br>
+  <input type="text" name="full_name" placeholder="Bruce Wayne"/>
+  </div>
+  <div style="margin-bottom:5px"><label>Email</label><br>
+  <input type="text" name="email" placeholder="Bruce@Wayne.com"/>
+  </div>
+  <div style="margin-bottom:5px"><label>Age</label><br>
+  <input type="number" name="age"  min="0" max="120" placeholder="13"/>
+  </div>
+  <div style="margin-bottom:5px"><label>Work Experience</label><br>
+  <input type="number" name="work_experience" placeholder="7"/>
+  </div>
+
+  <input type="submit"/>
+  
+</form>
